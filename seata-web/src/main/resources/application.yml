@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+
+spring:
+  application:
+    name: seata-web
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
