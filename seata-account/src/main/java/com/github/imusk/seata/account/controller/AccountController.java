@@ -35,6 +35,11 @@ public class AccountController {
         System.out.println("Amount : " + amount);
         System.out.println("UserId : " + userId);
 
+        // TODO 模拟异常
+        if (userId == null || userId == 1) {
+            throw new RuntimeException("模拟异常.");
+        }
+
         Map<String, Object> map = new HashMap<>();
         map.put("amount", amount);
         map.put("userId", userId);
